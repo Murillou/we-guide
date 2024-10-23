@@ -3,8 +3,17 @@ import divisor from '../assets/traco.png';
 import facebookLogo from '../assets/Facebook.png';
 import googleLogo from '../assets/Google.png';
 import './Login.css';
+import { useState } from 'react';
 
 export function Login() {
+  // Estado feito para armazenar o valor da senha
+  const [showPassword, setShowPassword] = useState(false);
+
+  // Função que altera o valor do estado para que possamos mostrar a senha para o usuário
+  function togglePasswordVisibility() {
+    setShowPassword(prev => !prev);
+  }
+
   return (
     <section className="d-flex flex-column align-items-center justify-content-center min-vh-100 custom-background">
       <img
@@ -27,11 +36,19 @@ export function Login() {
 
           <div className="position-relative">
             <input
-              type="password"
+              // Operador ternário para alterar o tipo do input conforme o valor do estado
+              type={showPassword ? 'text' : 'password'}
               className="custom-input-forms"
               placeholder="Senha"
             />
-            <i className="fas fa-eye-slash custom-eye-icon"></i>
+
+            <i
+              // Operador ternário para alterar o icone conforme o valor do estado
+              className={`fas ${
+                showPassword ? 'fa-eye' : 'fa-eye-slash'
+              } custom-eye-icon`}
+              onClick={togglePasswordVisibility}
+            ></i>
           </div>
         </div>
 
