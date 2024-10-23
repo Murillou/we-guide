@@ -51,12 +51,18 @@
   color: #808080;
 }
 
-.custom-redefinicao-senha {
+.custom-links-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #005b85;
-  margin: 1rem 0;
+}
+
+.custom-pattern-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #4d4d4d;
 }
 
 .custom-submit-input {

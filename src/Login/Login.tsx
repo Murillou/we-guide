@@ -35,7 +35,7 @@ export function Login() {
           </div>
         </div>
 
-        <a href="#" className="custom-redefinicao-senha">
+        <a href="#" className="custom-links-text my-3">
           Esqueci minha senha
         </a>
 
@@ -54,6 +54,14 @@ export function Login() {
         <div className="d-flex mx-auto gap-3">
           <img src={googleLogo} alt="Logo da Google" />
           <img src={facebookLogo} alt="Logo do Facebook" />
+        </div>
+
+        <div className="mx-auto my-2 ">
+          <span className="custom-pattern-text">Ainda não tem uma conta?</span>{' '}
+          {''}
+          <a href="#" className="custom-links-text">
+            Cadastre-se
+          </a>
         </div>
       </form>
     </section>
