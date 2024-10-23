@@ -50,3 +50,16 @@
   cursor: pointer;
   color: #808080;
 }
+
+.custom-redefinicao-senha {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #005b85;
+  margin: 1rem 0;
+}
+
+.custom-submit-input {
+  background-color: #005b85;
+  color: #fff;
+}

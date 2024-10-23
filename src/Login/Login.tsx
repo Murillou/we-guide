@@ -1,4 +1,7 @@
 import logoWeGuide from '../assets/we-guide-extenso.png';
+import divisor from '../assets/traco.png';
+import facebookLogo from '../assets/Facebook.png';
+import googleLogo from '../assets/Google.png';
 import './Login.css';
 
 export function Login() {
@@ -32,9 +35,26 @@ export function Login() {
           </div>
         </div>
 
-        <a href="#"> Esqueci minha senha </a>
+        <a href="#" className="custom-redefinicao-senha">
+          Esqueci minha senha
+        </a>
 
-        <input type="submit" value="Entrar" />
+        <input
+          type="submit"
+          value="Entrar"
+          className="custom-input-forms custom-submit-input"
+        />
+
+        <div className="d-flex align-items-center my-3">
+          <img src={divisor} alt="traço" />
+          <span className="mx-2">ou</span>
+          <img src={divisor} alt="traço" />
+        </div>
+
+        <div className="d-flex mx-auto gap-3">
+          <img src={googleLogo} alt="Logo da Google" />
+          <img src={facebookLogo} alt="Logo do Facebook" />
+        </div>
       </form>
     </section>
   );
