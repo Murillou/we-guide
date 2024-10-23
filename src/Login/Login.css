@@ -91,3 +91,30 @@
 .custom-social:hover {
   transform: scale(1.1);
 }
+
+.login-container {
+  display: flex;
+  min-height: 100%;
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section {
+  flex: 1;
+  background-image: url('../assets/background-login-screen.png');
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .image-section {
+    display: block;
+  }
+}
