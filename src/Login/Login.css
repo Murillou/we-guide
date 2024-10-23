@@ -68,4 +68,26 @@
 .custom-submit-input {
   background-color: #005b85;
   color: #fff;
+  border-radius: 6px;
+  border: 1px solid #808080;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+
+.custom-submit-input:hover {
+  background-color: #006f8d;
+  transition: 0.3s;
+}
+
+.custom-logo-social-facebook {
+  width: 50px;
+  height: 50px;
+}
+
+.custom-social {
+  transition: 0.3s ease, transform 0.3s ease;
+}
+
+.custom-social:hover {
+  transform: scale(1.1);
 }

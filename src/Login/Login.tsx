@@ -1,7 +1,7 @@
 import logoWeGuide from '../assets/we-guide-extenso.png';
 import divisor from '../assets/traco.png';
-import facebookLogo from '../assets/Facebook.png';
-import googleLogo from '../assets/Google.png';
+import facebookLogo from '../assets/Facebook.jpg';
+import googleLogo from '../assets/Google.jpg';
 import './Login.css';
 import { useState } from 'react';
 
@@ -68,9 +68,18 @@ export function Login() {
           <img src={divisor} alt="traço" />
         </div>
 
-        <div className="d-flex mx-auto gap-3">
-          <img src={googleLogo} alt="Logo da Google" />
-          <img src={facebookLogo} alt="Logo do Facebook" />
+        <div className="d-flex aligns-items-center justify-content-center mx-auto gap-3">
+          <a href="#">
+            <img src={googleLogo} alt="" className="custom-social" />
+          </a>
+
+          <a href="#">
+            <img
+              src={facebookLogo}
+              alt=""
+              className="custom-logo-social-facebook custom-social"
+            />
+          </a>
         </div>
 
         <div className="mx-auto my-2 ">
