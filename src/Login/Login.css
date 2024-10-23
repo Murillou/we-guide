@@ -1,0 +1,19 @@
+.custom-background {
+  background-color: #f6f6f6;
+}
+
+.custom-rounded {
+  border-radius: 8px;
+}
+
+.custom-shadow {
+  box-shadow: 0px 1px 3px 0px #a6afc366;
+}
+
+.custom-gray-strong-color {
+  color: #666666;
+}
+
+.custom-gray-neutral-color {
+  color: #5e636e;
+}
