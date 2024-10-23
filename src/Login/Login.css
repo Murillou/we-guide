@@ -12,8 +12,41 @@
 
 .custom-gray-strong-color {
   color: #666666;
+  font-weight: 600;
 }
 
 .custom-gray-neutral-color {
   color: #5e636e;
+  font-weight: 400;
+}
+
+.custom-margin-bottom-logo {
+  margin-bottom: 2.5rem;
+}
+
+.custom-padding-vertical-forms {
+  padding: 2rem 0 2rem 0;
+}
+
+.custom-input-forms {
+  border-radius: 6px;
+  border: 1px solid #808080;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+
+.custom-input-forms::placeholder {
+  color: #808080;
+  opacity: 1;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.custom-eye-icon {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  cursor: pointer;
+  color: #808080;
 }
